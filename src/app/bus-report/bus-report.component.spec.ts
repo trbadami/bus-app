@@ -8,6 +8,7 @@ import { FormsModule } from '../../../node_modules/@angular/forms';
 import { BrowserAnimationsModule } from '../../../node_modules/@angular/platform-browser/animations';
 import { BusDataService } from '../services/bus-data.service';
 import { BusReportGeneratorService } from '../services/bus-report-generator.service';
+import { MockComponent } from '../../../node_modules/ng2-mock-component';
 
 describe('BusReportComponent', () => {
   let component: BusReportComponent;
@@ -17,7 +18,9 @@ describe('BusReportComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       providers: [BusDataService, BusReportGeneratorService],
-      declarations: [ BusReportComponent, OrganisationComponent ],
+      declarations: [ BusReportComponent, MockComponent(
+        {selector:'app-organisation',  inputs: ['organisation'] }
+      )  ],
       imports: [MatExpansionModule, HttpClientTestingModule, MatFormFieldModule, FormsModule, BrowserAnimationsModule, MatInputModule, MatTableModule]
     })
     .compileComponents();

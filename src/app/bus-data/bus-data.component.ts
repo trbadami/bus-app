@@ -15,10 +15,15 @@ export class BusDataComponent implements OnInit {
   
   @Input() busData :BusData[];
   sortedData: BusData[];
-  constructor() { }
+  constructor() { 
+    if(!this.busData){
+      this.busData = [];
+    }
+  }
 
 
   ngOnInit() {
+  
     this.sortedData = this.busData.slice();
     
   }
