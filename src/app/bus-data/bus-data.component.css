@@ -1,0 +1,16 @@
+.status_Red {color:red}
+.status_Green {color:green}
+.status_Gray {color:gray}
+.status_Blue {color:blue}
+
+table {
+    width: 100%;
+  }
+.mat-header-row { 
+    font-weight:bold; 
+    background-color: #b6d0ea; 
+ }
+ .mat-row:nth-child(even){
+  background-color: lightgray;
+  }
+

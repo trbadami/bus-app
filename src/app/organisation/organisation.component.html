@@ -6,7 +6,7 @@
     </mat-panel-title>
    
   </mat-expansion-panel-header>
-
+  <app-bus-data [busData]="organisation.busData"></app-bus-data>
 <mat-form-field class="comments">
     <textarea rows="5" [(ngModel)]="organisation.comments" matInput placeholder="Enter notes here"></textarea>
   </mat-form-field>

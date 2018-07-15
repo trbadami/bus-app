@@ -5,6 +5,8 @@ import { BusReportGeneratorService } from '../services/bus-report-generator.serv
 import { Observable } from '../../../node_modules/rxjs';
 import { ReportMaster } from '../models/report-master';
 
+
+
 @Component({
   selector: 'app-bus-report',
   templateUrl: './bus-report.component.html',
@@ -18,9 +20,7 @@ export class BusReportComponent implements OnInit {
   }
 
   ngOnInit() {
-    
-    //this.loadBusData();
-    
+    this.loadBusData();
   } 
 
   loadBusData():Observable<ReportMaster>{

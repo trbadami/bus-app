@@ -4,6 +4,7 @@ import { OrganisationComponent } from './organisation.component';
 import { MatExpansionModule, MatFormFieldModule, MatInputModule } from '@angular/material';
 import { FormsModule } from '../../../node_modules/@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { BusDataComponent } from '../bus-data/bus-data.component';
 
 describe('OrganisationComponent', () => {
   let component: OrganisationComponent;
@@ -11,7 +12,7 @@ describe('OrganisationComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ OrganisationComponent ],
+      declarations: [ OrganisationComponent, BusDataComponent ],
       imports:[MatExpansionModule, MatFormFieldModule, FormsModule, BrowserAnimationsModule, MatInputModule ]
     })
     .compileComponents();

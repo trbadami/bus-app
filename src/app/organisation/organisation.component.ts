@@ -6,6 +6,7 @@ import { Organisation } from '../models/organisation';
   templateUrl: './organisation.component.html',
   styleUrls: ['./organisation.component.css']
 })
+
 export class OrganisationComponent implements OnInit {
 
   @Input() organisation:Organisation;
